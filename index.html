@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="login-container">
+  <div class="logo-container">
+    <img src="https://images.yourstory.com/cs/images/companies/OFTIzYsP400x400-1596114886307.jpg" alt="Logo"> 
+  </div>
+  <form id="loginForm">
+    <div class="input-container">
+      <input type="email" id="username" placeholder="Username" required>
+    </div>
+    <div class="input-container">
+      <input type="password" id="password" placeholder="Password" required pattern="(?=.*\d)(?=.*[a-zA-Z])(?=.*[@]).*">
+    </div>
+    <div class="login-button-container">
+      <button type="submit" id="loginButton">Login</button>
+    </div>
+    <div class="forgot-password-container">
+      <a href="mailto:support@smartserv.io?subject=Password Reset Request" id="forgotPassword">Forgot your password?</a>
+    </div>
+  </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
